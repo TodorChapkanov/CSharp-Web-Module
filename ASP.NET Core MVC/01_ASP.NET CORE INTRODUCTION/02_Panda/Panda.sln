@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda", "Panda\Panda.csproj", "{1ACC2EBB-A301-420E-8CE4-7F0C562BA54E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Data", "Panda.Data\Panda.Data.csproj", "{463C7DB4-BB72-4622-8D23-B651F799578C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Domain", "Panda.Domain\Panda.Domain.csproj", "{0D7D2E98-261D-46D7-B445-FD7A3C44C547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.Services", "Panda.Services\Panda.Services.csproj", "{FD527370-3D73-461C-B6CD-F9830838E3E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ACC2EBB-A301-420E-8CE4-7F0C562BA54E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ACC2EBB-A301-420E-8CE4-7F0C562BA54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ACC2EBB-A301-420E-8CE4-7F0C562BA54E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ACC2EBB-A301-420E-8CE4-7F0C562BA54E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{463C7DB4-BB72-4622-8D23-B651F799578C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{463C7DB4-BB72-4622-8D23-B651F799578C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{463C7DB4-BB72-4622-8D23-B651F799578C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{463C7DB4-BB72-4622-8D23-B651F799578C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D7D2E98-261D-46D7-B445-FD7A3C44C547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D7D2E98-261D-46D7-B445-FD7A3C44C547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D7D2E98-261D-46D7-B445-FD7A3C44C547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D7D2E98-261D-46D7-B445-FD7A3C44C547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD527370-3D73-461C-B6CD-F9830838E3E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD527370-3D73-461C-B6CD-F9830838E3E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD527370-3D73-461C-B6CD-F9830838E3E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD527370-3D73-461C-B6CD-F9830838E3E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B0FE9A3-F255-4BCD-8E13-2074852FB736}
+	EndGlobalSection
+EndGlobal

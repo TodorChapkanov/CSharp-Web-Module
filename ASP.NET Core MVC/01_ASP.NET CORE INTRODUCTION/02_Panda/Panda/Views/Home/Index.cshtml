@@ -1,0 +1,64 @@
+﻿@using System.Linq
+@using System.Collections.Generic
+@model IEnumerable<Panda.ViewModels.Packages.PackageLogedUserViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@if (!this.User.Identity.IsAuthenticated)
+{
+    <div class="jumbotron mt-3 bg-panda">
+        <h1 class="text-white">Welcome to PANDA Delivery Services.</h1>
+        <hr class="bg-white hr-2" />
+        <h3 class="text-white"><a href="/Identity/Account/Login">Login</a> if you have an account.</h3>
+        <h3 class="text-white"><a href="/Identity/Account/Register">Register</a> if you don't.</h3>
+    </div>
+}
+else
+{
+    <h1 class="text-center">Hello, Pesho!</h1>
+    <hr class="hr-2 bg-panda">
+    <div class="d-flex justify-content-between">
+        <div class="w-25 bg-white">
+            <h2 class="text-center">Pending</h2>
+            <div class="border-panda p-3">
+                @foreach (var pendingPackage in Model.Where(status => status.Status == "Pending"))
+                {
+                    <div class="p-2 d-flex justify-content-around">
+                        <h4 class="w-75">@pendingPackage.Description</h4>
+                        <a href="/Packages/Details?id=@pendingPackage.Id" class="btn bg-panda text-white w-25">Details</a>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="w-25 bg-white">
+            <h2 class="text-center">Shipped</h2>
+            <div class="border-panda p-3">
+                @foreach (var shippedPackage in Model.Where(status => status.Status == "Shipped"))
+                {
+                    <div class="p-2 d-flex justify-content-around">
+                        <h4 class="w-75">@shippedPackage.Description</h4>
+                        <a href="/Packages/Details?id=@shippedPackage.Id" class="btn bg-panda text-white w-25">Details</a>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="w-25 bg-white">
+            <h2 class="text-center">Delivered</h2>
+            <div class="border-panda p-3">
+                @foreach (var deliverdPackage in Model.Where(status => status.Status == "Delivered"))
+                {
+                    <div class="p-2 d-flex justify-content-around">
+                        <h4 class="w-75">@deliverdPackage.Description</h4>
+
+                        <a href="/Packages/Acquire?id=@deliverdPackage.Id" class="btn bg-panda text-white w-25">Acquire</a>
+
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}
